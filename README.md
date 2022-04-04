@@ -6,4 +6,6 @@ Temas:
 
 - [Capitulo 2 - Java variables](https://github.com/eugenia1984/UTN-FRSR-Programacion1/tree/main/capitulo02)
 
-- Capitulo 3 - Java, tipo de primitivos
+- [Capitulo 3 - Java, tipo de primitivos](https://github.com/eugenia1984/UTN-FRSR-Programacion1/tree/main/capitulo03)
+
+---
