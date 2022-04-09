@@ -91,6 +91,11 @@ Es un lenguaje de desarrollo de propósito general y como tal es válidop para d
 
 ## :star: 1.4 Ejercicio: Hola Mundo
 
+
+```Java
+System.out.println("Hola Mundo");
+```
+
 ---
 
 ## :star: 1.5 Ejercicio: Saludar en Java
