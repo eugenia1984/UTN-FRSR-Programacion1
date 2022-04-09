@@ -33,7 +33,43 @@
 
 ## :star: 1.3 Instalación de Apache Netbeans. Veremos TIOBE (estadísticas de lenguajes de programación)
 
+- apachenetbeans.org
 
+- click en Downloads en la version **12.1** -> Elegimos acorde al sistema operativo
+
+- para instalar en windows -> hacer click en lo descargado -> abrir -> Next -> se ve la ruta de instalacion y Next -> Finish
+
+---
+
+## Introduccion de Java
+
+- Creado por Sun Microsystems Inc
+
+- Fue presentado en la segunda mitad del año 1995
+
+- Fue creado por un grupo de trabajo liderado por James Gosling.
+
+- El nombre Java surgio de una de las reuniones creativas celebradas por el eqquipo
+
+## ¿ Qué es Java ?
+
+Es un lenguaje de desarrollo de propósito general y como tal es válidop para desarrollar todo tipo de aplicaciones.
+
+## ¿ Qué lo hace distinto a los demás lenguajes?
+
+- Los programas creados por Java son independeintes de la arquitectura
+
+- Permite escribir Applets
+
+- Se puede escribir aplicaciones para intrarredes
+
+- Aplicaciones clientes / servidor
+
+## ¿ Qué se puede programar ?
+
+- Aplicaciones independientes
+
+- Applets
 
 ---
 
