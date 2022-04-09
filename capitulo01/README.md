@@ -71,6 +71,22 @@ Es un lenguaje de desarrollo de propósito general y como tal es válidop para d
 
 - Applets
 
+## Caracterñisticas
+
+- POO
+
+- Funciona perfectamente en red
+
+- Gran funcionalidad gracias a sus librerias (Clases)
+
+- No tiene punteros manejables por el programador, aunque lo maneja interna y transparentamente el programa.
+
+- EL manejo de memoria no es un problema
+
+- Genera aplicaciones con pocos errores posibles
+
+- Incorpora multi-threading (es multi hilos)
+
 ---
 
 ## :star: 1.4 Ejercicio: Hola Mundo
