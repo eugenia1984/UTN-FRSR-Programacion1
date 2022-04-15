@@ -21,50 +21,56 @@
 
 ## :star:  2.1 Variables
 
-Una variable nos va a permitir guardar información, esta inforamción van a ser los datos que vamos a procesar con nuestro programa, estos datos van a variar según la información que estemos recibiendo por parte del usuario o del tipo de información que estemos procesando.
+```
+VARIABLES EN JAVA
+-SUJETO A CAMBIO
+-PERMITE INTERACTUAR
+-ALMACENA VALORES
+```
 
-Una variable va a tener 
+- Una variable nos va a permitir guardar información, esta inforamción van a ser los datos que vamos a procesar con nuestro programa, estos datos van a variar según la información que estemos recibiendo por parte del usuario o del tipo de información que estemos procesando.
 
-- Nuestras variables pueden almacenar distintos tipos de datos:
 
-Datos numéricos
-
-Textos o Cadenas
-
-Pueden hacer referencias a Objetos
+- Nuestras variables pueden almacenar distintos tipos de datos: numéricos, textos o cadenas, hacen. referencias a Objetos
 
 
 ## Variables y operadores
 
-En Java para almacenar **informacion** necesitamos las **variables** para almacenar datos de manera temporal.
+- En Java, como en cualquier lenguaje de programación, para almacenar información, es necesaria la creación de **variables**, las cuales nos permitirán almacenar datos de nuestro programa de manera temporal.
 
-El objetivo de declarar una variables es reservar el espacio de memoria dependiendo del tipo de dato que vayamos a utilizar.
+- El objetivo de declarar una variable es reservar espacio de memoria dependiendo del tipo que vayamos a utilizar.
 
-Estas variables nos permiten hacer programas dinamicos, por lo que en la mayoria de los casos los valores cambiaran durante la interaccion con el usuario y el programa.
+- Estas variables nos permiten también hacer programas dinámicos, por lo que en la mayoría de los casos los valores cambiarán durante la interacción con el usuario y el programa. 
 
 En Java existen distintos datos:
 
-- Tipos primitivos: *int*(entero), *float*(flotante), *boolean* (True, False).
+```
+ tipos primitivos en Java
+    |            |
+    v            v
+  Enteros     Flotantes
+``` 
 
-Dentro de *Integer*:
+-> Estos tipos de Java son los más básicos y son los que utilizaremos si necesitamos la mayor rapidez y ahorro en recursos, con el objetivo de que nuestros algoritmos sean lo más eficientes. Sin embargo en la práctica utilizaremos también funciones ya creadas que pueden hacer uso de manera indirecta de estos tipos primitivos, así que de cualquier manera los estaremos manejando en nuestros programas, ya sea de manera directa o indirecta. Cada uno de estos tipos primitivos, tiene un valor por default, el cual es importante conocer ya que cuando los utilicemos en conjunto con nuestras clases de Java, el compilador tomará en cuenta este valor por default según el tipo de dato que utilicemos.
 
-byte
+- Dentro de *Enteros*:
 
-short
+byte - 8 bits - default: 0
 
-char
+short - 16 bits - default: 0
 
-int
+char - 16 bits - default: 0
+ 
+int - 32 bits - default: 0
 
-long
+long - 64 bits - default: 0
 
-BigInt
 
-Dentro de los *float*:
+- Dentro de los *Float*:
 
-float
+float - 32 bits - default: 0
 
-double
+double - 64 bits - default: 0
 
 
 
@@ -74,11 +80,30 @@ double
 
 ## :star:  2.2 Tipos enteros(Integer) y String
 
+```
+CADENA
+-TRATAMIENTO ESPECIAL
+- NO ES DE TIPO PRIMITIVO
+- CONTEXTO STRING
+- NO SE NECESITA INSTANCIAR
+```
+
+- En Java el manejo de cadenas es un tipo Object, pero que tiene varias características en particular. Aunque aún no detallaremos aún el manejo de objetos, pero cabe mencionar que en Java es necesario el uso del operador new para crear un nuevo objeto.
+
+- Sin embargo cuando hablamos de cadenas esto no es necesario. Podemos simplemente declarar un tipo String y asignar un valor cadena directamente a esta variable, es por ello que pareciera que el tipo String es un tipo primitivo pero no es así, sin embargo debido al uso tan frecuente de este tipo al momento de estar programando, es que se decidió simplificar el proceso de creación y asignación de valores en este tipo String en particular.
+
 Para declarar String:
 
 ```Java 
 String saludo = "Hola mundo";
 ```
+
+- Podemos observar que para declarar una cadena en Java, únicamente basta con utilizar el tipo String, posteriormente definir su nombre (identificador), y finalmente asignar un valor, sin la necesidad de utilizar el operador new. Así, podemos asignar directamente el valor de una cadena, simplemente utilizando comillas dobles para envolver el valor deseado.
+
+- En Java, a diferencia de otros lenguajes, no se permite la sobrecarga de operadores, lo que significa que no podemos alterar la función de los operadores para hacer lo que nosotros deseemos, sin embargo existe una excepción a esta regla cuando manejamos tipos cadena. Cuando usamos el operador + y se detecta un tipo String en la operación, se dice que tenemos el contexto String, y por lo tanto en lugar de sumar valores, lo que hace Java es concatenar los valores que se encuentren en la operación. Esto lo veremos más adelante con un ejercicio, pero es importante notar este punto ya que es otra simplificación importante al momento de usar cadenas en Java.
+
+
+- Uno de los detalles más importantes que estudiaremos más adelante, es la forma en que se comparan objetos en Java, sin embargo en esta sección sólo aclararemos que al utilizar objetos no se utiliza el símbolo == como con los tipos primitivos, sino el método **equals()**. En el caso de cadenas esto nos permitirá comparar el contenido de la cadena. En el tema de objetos estudiaremos esto a más detalle, pero de momento es importante que conozcan este detalle para que sepan cómo comparar cadenas.
 
 Para comparar:
 
@@ -88,6 +113,21 @@ saludo.equals("Hola mundo");
 
 En Java **String** es de tipo *Object*, por lo que se debe utilizar el operador *new* para crear un nuevo objeto.
 
+
+### Caracteres de escape al utilizar cadenas
+
+| Secuencia de escape | Descripcion |
+| ------------------- | ----------- |
+| \t | inserta un tabulador |
+| \b | inserta un retroceso (backspace) |
+| \n | inserta una nueva linea |
+| \r | inserta un retorno de carro |
+| \f | se mueve a la siguiente pagina (Form feed). Se utiliza para impresoras, no consolas |
+| \' | inserta una comilla simple |
+| \" | inserta una comilla doble |
+| \\ | inserta una barra invertida |
+
+En la tabla mostrada, podemos observar los caracteres de escape que son utilizados al momento de desplegar mensajes en la salida estándar. Estos caracteres los pondremos en práctica en los ejercicios que vamos a realizar a continuación.
 
 ---
 
