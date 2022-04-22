@@ -210,7 +210,7 @@ En Java **String** es de tipo *Object*, por lo que se debe utilizar el operador 
 | \n | inserta una nueva linea |
 | \r | inserta un retorno de carro |
 | \f | se mueve a la siguiente pagina (Form feed). Se utiliza para impresoras, no consolas |
-| \' | inserta una comilla simple |
+| ```\'``` | inserta una comilla simple |
 | \" | inserta una comilla doble |
 | \\ | inserta una barra invertida |
 
