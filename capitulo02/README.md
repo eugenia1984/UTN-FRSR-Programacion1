@@ -150,6 +150,8 @@ Se escriben en **mayuscula** y si tengo mas de una palabra las uno con **guion b
 
 ```Java
 double final IVA_TIPO_1 = 0.16;
+```
+
 ---
 
 ## :star:  2.2 Tipos enteros(Integer) y String
