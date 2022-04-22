@@ -205,14 +205,14 @@ En Java **String** es de tipo *Object*, por lo que se debe utilizar el operador 
 
 | Secuencia de escape | Descripcion |
 | ------------------- | ----------- |
-| \t | inserta un tabulador |
-| \b | inserta un retroceso (backspace) |
-| \n | inserta una nueva linea |
-| \r | inserta un retorno de carro |
-| \f | se mueve a la siguiente pagina (Form feed). Se utiliza para impresoras, no consolas |
+| ```\t``` | inserta un tabulador |
+| ```\b``` | inserta un retroceso (backspace) |
+| ```\n``` | inserta una nueva linea |
+| ```\r``` | inserta un retorno de carro |
+| ```\f``` | se mueve a la siguiente pagina (Form feed). Se utiliza para impresoras, no consolas |
 | ```\'``` | inserta una comilla simple |
-| \" | inserta una comilla doble |
-| \\ | inserta una barra invertida |
+| ```\"``` | inserta una comilla doble |
+| ```\\``` | inserta una barra invertida |
 
 En la tabla mostrada, podemos observar los caracteres de escape que son utilizados al momento de desplegar mensajes en la salida estándar. Estos caracteres los pondremos en práctica en los ejercicios que vamos a realizar a continuación.
 
