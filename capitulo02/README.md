@@ -1,4 +1,4 @@
-# :book: Capitulo 1: Variables en Java (13APR)
+# :book: Capitulo 1: Clases 2 y 3 Variables en Java (13APR y 22 APR)
 
 ## Temas:
 
@@ -42,6 +42,14 @@ VARIABLES EN JAVA
 
 - Estas variables nos permiten también hacer programas dinámicos, por lo que en la mayoría de los casos los valores cambiarán durante la interacción con el usuario y el programa. 
 
+**variable** -> 
+
+-> espacio en memoria que se define en un programa de computador para almacenar de forma temporal.
+
+-> los valores pueden cambiar mientras se esta ejecutando un programa de computador
+
+-> las variables en Java solo aceptan 
+
 En Java existen distintos datos:
 
 ```
@@ -73,9 +81,75 @@ float - 32 bits - default: 0
 double - 64 bits - default: 0
 
 
+- Otros tipos de datos son..
+
+... **boolean** : true, false
+
+... **char**, un solo caracter, va entre comillas.
+
+... **String**, cadena de caracteres, van en tre comillas. Es una **clase** y tiene metodos propios.
+
 
 - Tipo que son extensiones de la clase Object (referencia a Objetos): *clases*, *Interfaces*, *Arrays*.
 
+
+## ¿ Como se declara la variable?
+
+En Java se pueden declarar e inicializar al mismo tiempo.
+
+```Java
+int x;  // declaro  la variable
+x = 20; // inicializo la variable
+
+int y = 30; // declaro e inicializo la variable al mismo tiempo
+```
+
+Para los enteros se utiliza más **int** y para los decimales **double**
+
+Variable de tipo **char**
+
+```Java
+// primero declaro
+char k;
+// luego inicializo
+k = 's';
+// declaro e inicializo
+char l = 'l';
+```
+
+Variable de tipo **boolean**
+```Java
+// primero declaro
+boolean m;
+// luego inicializo
+m = true;
+// declaro e inicializo
+boolean n = false;
+```
+
+Variable de tipo **double**:
+```Java
+// declaro la variable
+double salario;
+// inicializo la variable
+salario = 80000.8;
+// declaro e inciializo
+double kilos = 8.72;
+```
+
+
+---
+
+## :star: Constantes
+
+Las constantes no cambian su valor, deben declararse e inicializarce al mismo tiempo.
+
+Llevan la palabra reservada **final**
+
+Se escriben en **mayuscula** y si tengo mas de una palabra las uno con **guion bajo**
+
+```Java
+double final IVA_TIPO_1 = 0.16;
 ---
 
 ## :star:  2.2 Tipos enteros(Integer) y String
@@ -94,8 +168,19 @@ CADENA
 
 Para declarar String:
 
+Puede declarar e inicializar juntos:
+
 ```Java 
+// declaro variable e inicializo
 String saludo = "Hola mundo";
+```
+
+Puedo declarar y luego asignar:
+```Java
+// declaro la variable
+String nombre;
+// inicializo
+nombre = "Eugenia";
 ```
 
 - Podemos observar que para declarar una cadena en Java, únicamente basta con utilizar el tipo String, posteriormente definir su nombre (identificador), y finalmente asignar un valor, sin la necesidad de utilizar el operador new. Así, podemos asignar directamente el valor de una cadena, simplemente utilizando comillas dobles para envolver el valor deseado.
