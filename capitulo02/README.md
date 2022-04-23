@@ -154,6 +154,13 @@ double final IVA_TIPO_1 = 0.16;
 
 ---
 
+## :star: Var
+
+Teniendo Java 10 en adelante se puede utilizar **var** y asi no tenemos que declarar el tipo de dato a almacenar.
+
+
+---
+
 ## :star:  2.2 Tipos enteros(Integer) y String
 
 ```
