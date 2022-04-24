@@ -18,7 +18,7 @@
 
 - 3.8 Conversión de tipos primitivos: Ejercicio Parte 2
 
-- 3.9 Cuestionario 1: Preguntas de variables |       Cuestionario 2: Preguntas de números
+- 3.9 Cuestionario 1: Preguntas de variables |  Cuestionario 2: Preguntas de números
 
 - Tarea 3: Tienda de libros = Solución
 

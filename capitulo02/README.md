@@ -415,7 +415,7 @@ public class Clase02 {
     }
 }
 ```
-Si tuviera 3 variables y entre parentesis pongo las variables que son int, entonces por prioridad va primero a los parentesis, entonces va a sumar en vez de concatenar (esto es por la prioridad de parentesis), si lo de afuera dle parentesis es un String a esa si la va a concatenar.
+Si tuviera 3 variables y entre parentesis pongo las variables que son int, entonces por prioridad va primero a los parentesis, entonces va a sumar en vez de concatenar (esto es por la prioridad de parentesis), si lo de afuera del parentesis es un String a esa si la va a concatenar.
 
 -> **click derecho** -> **format** para tener el codigo ordenado
 
@@ -427,12 +427,51 @@ Si tuviera 3 variables y entre parentesis pongo las variables que son int, enton
 ## :star: 2.6 Caracteres especiales
 
 
+
+```Java
+public class Clase02 {
+
+    public static void main(String[] args) {
+	String nombre = "Eugenia";
+	System.out.println(nombre); // Eugenia
+	System.out.println("Nueva linea \n"+nombre); // el caracter \n me da un salto de linea
+	System.out.println("Tabulador: \t"+nombre); // el caracter \t me tabula linea
+    }
+}
+```
+
+```\n``` -> salto de linea
+
+```\t``` -> tabulador
+
+
+```\b ``` -> caracter de retroceso, saca un lugar hacia atras
+
+```\' ``` -> comilla simple
+
+```\'' ``` -> comilla doble
+
 ---
 ---
 
 
 ## :star: 2.7 Clase Scanner: Ejercicio
 
+
+```
+public class Clase02 {
+import Scanner;
+
+    public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Proporciona el titulo: ");
+	String titulo = scanner.neaxtLine();
+	System.out.println("Proporciona el autor: ");
+	String autor = scanner.nextLine();
+	System.out.println(titulo+" fue escrito por "+autor);
+    }
+}
+``` 
 
 ---
 ---
