@@ -219,12 +219,6 @@ public class Clase02 {
 ```
 
 ---
-
-## :star: Var
-
-Teniendo Java 10 en adelante se puede utilizar **var** y asi no tenemos que declarar el tipo de dato a almacenar.
-
-
 ---
 
 ## :star:  2.2 Tipos enteros(Integer) y String
@@ -315,17 +309,53 @@ En Java **String** es de tipo *Object*, por lo que se debe utilizar el operador 
 En la tabla mostrada, podemos observar los caracteres de escape que son utilizados al momento de desplegar mensajes en la salida estándar. Estos caracteres los pondremos en práctica en los ejercicios que vamos a realizar a continuación.
 
 ---
+---
 
 ## :star: 2.3 Inferencia de tipos (VAR)
 
 El valor de una variable se conoce como **literal** y el tipo de valor se asigna tanto a la varaible como a la literal, una literal de tipo cadena sera automaticamente String.
 
-A partir de la versión de Java podemos utilizar **var**
+A partir de la versión 10 de Java podemos utilizar **var** (es una palabra reservada) en vez de usar el tipo de dato definido y Java lo infiere.
 
+JDK debe ser de 10 en adelante para poder utilizar var.
+
+```Java 
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	var miVariableEntera = 2;  // es de tipo int
+	var miVariableCadena = "Hola";  // es de tipo String
+        System.out.println("MiVariableCadena : "+miVariableCadena)  // concatenacion de cadenas con +
+    }
+}
+```
+
+Dentro dle metodo **main** se puede usar VAR sin problemas, fuera de main no se puede usar.
+
+---
 ---
 
 ## :star: 2.4 Reglas para definir una variable
 
+- No puede tener alguna de las palabras reservadas:
+
+```
+abstract   continue     for          new        swith
+assert     dafault      goto         package    synchronized
+boolean    do           if           private    this
+break      double       implements   protected  throw
+byte       else         import       public     throws
+case       enum         instance of  return     transient
+catch      extends      int          short      try
+char       final        interface    static     void
+class      finally      long         strict     volatile 
+const      float        native        super     while
+
+```
+
+---
 ---
 
 ## :star: 2.5 Concatenación: Ejercicio
