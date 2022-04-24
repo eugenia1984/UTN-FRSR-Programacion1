@@ -53,9 +53,16 @@ VARIABLES EN JAVA
 Por ejemplo tenemos:
 
 ```Java
-int x = 5;
-x= -8;
-x = 2000;
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	int x = 5;
+	x= -8;
+	x = 2000;
+    }
+}
 ```
 
 A lo largo del programa, la varaible **x** paso de guardar **5** a guardar **-8** a guardar **2000*, todos son tipo de dato **int**, el tipo de dato NO cambia.
@@ -96,11 +103,14 @@ double - 64 bits - default: 0, entre 1.7e-308 a 1.7e308
 
 - Otros tipos de datos son..
 
-... **boolean** : true, false
+... **boolean** : true, false ``` boolean estaPrendido = true;```
 
-... **char**, un solo caracter, va entre comillas.
+... **char**, un solo caracter, va entre comillas. ```char a = 'a';```
 
-... **String**, cadena de caracteres, van en tre comillas. Es una **clase** y tiene metodos propios.
+... **String**, cadena de caracteres, van entre comillas. ```String saludo = "Buenos dias";```
+
+
+Observar que los tipos de datos en Java comienzan en minuscula, excepto **String** porque es una **clase** y tiene metodos propios para poder manupular cadenas.
 
 
 - Tipo que son extensiones de la clase Object (referencia a Objetos): *clases*, *Interfaces*, *Arrays*.
@@ -108,13 +118,22 @@ double - 64 bits - default: 0, entre 1.7e-308 a 1.7e308
 
 ## ¿ Como se declara la variable?
 
-En Java se pueden declarar e inicializar al mismo tiempo.
+En Java se pueden **declarar** (indicarle al compilador de Java que debe reservar en memoria el espacio para almacenar la variable) e **inicializar** (asignarle un valor a la variable) por separado o en una sola instrucción.
 
 ```Java
-int x;  // declaro  la variable
-x = 20; // inicializo la variable
+package clase02;
 
-int y = 30; // declaro e inicializo la variable al mismo tiempo
+public class Clase02 {
+
+    public static void main(String[] args) {
+	// Ejemplo por separado:
+	int x;  // declaro  la variable, java reserva 32bits de memoria para 	guardar los datos que esta variable almacenara
+	x = 20; // inicializo la variable
+
+	// Ejemplo en una sola instruccion:
+	int y = 30; // declaro e inicializo la variable al mismo tiempo, solo se guarda el valor en la variable y cuando se le asigna el 30 con el =
+     }
+}
 ```
 
 Para los enteros se utiliza más **int** y para los decimales **double**
@@ -122,32 +141,46 @@ Para los enteros se utiliza más **int** y para los decimales **double**
 Variable de tipo **char**
 
 ```Java
-// primero declaro
-char k;
-// luego inicializo
-k = 's';
-// declaro e inicializo
-char l = 'l';
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	char k;  // primero declaro
+	k = 'k'; // luego inicializo
+	char l = 'l'; // declaro e inicializo
+    }
+}
 ```
 
 Variable de tipo **boolean**
 ```Java
-// primero declaro
-boolean m;
-// luego inicializo
-m = true;
-// declaro e inicializo
-boolean n = false;
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	boolean m; // primero declaro
+	m = true; // luego inicializo
+
+	boolean n = false; // declaro e inicializo
+   }
+}
 ```
 
 Variable de tipo **double**:
 ```Java
-// declaro la variable
-double salario;
-// inicializo la variable
-salario = 80000.8;
-// declaro e inciializo
-double kilos = 8.72;
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	double salario; // declaro la variable
+	salario = 80000.8; // inicializo la variable
+	
+	double kilos = 8.72; // declaro e inicializo
+     }
+}
 ```
 
 
@@ -162,7 +195,14 @@ Llevan la palabra reservada **final**
 Se escriben en **mayuscula** y si tengo mas de una palabra las uno con **guion bajo**
 
 ```Java
-double final IVA_TIPO_1 = 0.16;
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	double final IVA_TIPO_1 = 0.16;
+    }
+}
 ```
 
 ---
@@ -193,16 +233,28 @@ Para declarar String:
 Puede declarar e inicializar juntos:
 
 ```Java 
-// declaro variable e inicializo
-String saludo = "Hola mundo";
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	// declaro variable e inicializo
+	String saludo = "Hola mundo";
+    }
+}
 ```
 
 Puedo declarar y luego asignar:
 ```Java
-// declaro la variable
-String nombre;
-// inicializo
-nombre = "Eugenia";
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	String nombre; // declaro la variable
+	nombre = "Eugenia"; // inicializo
+   }
+}
 ```
 
 - Podemos observar que para declarar una cadena en Java, únicamente basta con utilizar el tipo String, posteriormente definir su nombre (identificador), y finalmente asignar un valor, sin la necesidad de utilizar el operador new. Así, podemos asignar directamente el valor de una cadena, simplemente utilizando comillas dobles para envolver el valor deseado.
@@ -215,7 +267,14 @@ nombre = "Eugenia";
 Para comparar:
 
 ```Java 
-saludo.equals("Hola mundo");
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+	saludo.equals("Hola mundo");
+    }
+}
 ```
 
 En Java **String** es de tipo *Object*, por lo que se debe utilizar el operador *new* para crear un nuevo objeto.
