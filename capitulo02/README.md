@@ -201,11 +201,11 @@ public class Clase02 {
 
 ## :star: Constantes
 
-Las constantes no cambian su valor, deben declararse e inicializarce al mismo tiempo.
+- Las constantes no cambian su valor, deben declararse e inicializarce al mismo tiempo.
 
-Llevan la palabra reservada **final**
+- Llevan la palabra reservada **final**
 
-Se escriben en **mayuscula** y si tengo mas de una palabra las uno con **guion bajo**
+- Se escriben en **mayuscula** y si tengo mas de una palabra las uno con **guion bajo**
 
 ```Java
 package clase02;
@@ -316,7 +316,11 @@ En la tabla mostrada, podemos observar los caracteres de escape que son utilizad
 
 ---
 
-## :star: 2.3 Inferencia de tipos
+## :star: 2.3 Inferencia de tipos (VAR)
+
+El valor de una variable se conoce como **literal** y el tipo de valor se asigna tanto a la varaible como a la literal, una literal de tipo cadena sera automaticamente String.
+
+A partir de la versión de Java podemos utilizar **var**
 
 ---
 
