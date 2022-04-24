@@ -457,13 +457,15 @@ public class Clase02 {
 
 ## :star: 2.7 Clase Scanner: Ejercicio
 
+La clase Scanner nos va a permitir poder ingresar datos por teclado, para almacenarlo en variable.
+
 
 ```
 public class Clase02 {
 import Scanner;
 
     public static void main(String[] args) {
-	Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in); // instancio un objeto de la clase Scanner para poder utilizar sus metodos
 	System.out.println("Proporciona el titulo: ");
 	String titulo = scanner.neaxtLine();
 	System.out.println("Proporciona el autor: ");
