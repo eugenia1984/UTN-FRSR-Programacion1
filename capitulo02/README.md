@@ -183,7 +183,20 @@ public class Clase02 {
 }
 ```
 
+---
 
+Por default cuando se asigna un valor entero el tipo de dato que se maneja es **int** y en el caso de los reales el tipo de dato por default es **double**. Esto quiere decir que para asignar valores de los otros tipos de datos (real y entero) como float y long, se adiciona la incial del tipo de dato a continuacion del valor:
+
+```
+package clase02;
+
+public class Clase02 {
+
+    public static void main(String[] args) {
+        float h = 20.4f;
+        long j = 204988885695L;
+    }
+}
 ---
 
 ## :star: Constantes
@@ -238,8 +251,7 @@ package clase02;
 public class Clase02 {
 
     public static void main(String[] args) {
-	// declaro variable e inicializo
-	String saludo = "Hola mundo";
+	String saludo = "Hola mundo"; // declaro variable e inicializo
     }
 }
 ```
@@ -253,6 +265,13 @@ public class Clase02 {
     public static void main(String[] args) {
 	String nombre; // declaro la variable
 	nombre = "Eugenia"; // inicializo
+
+	String nombre2 = "Ana";  // declaracion e inicializacion en una sola instruccion
+
+	String nombre3 = new String("Andres");  // declaracion e inicializacion en una sola instruccion
+
+	String nombre4;
+	nombre4 = new String("Juan");  // declaro e inicializo por separado
    }
 }
 ```
