@@ -1,4 +1,4 @@
-# :book: Capitulo 1: Fundamentos Java (8APR)
+# :book: Capitulo 1: Fundamentos Java (Clase 1 - 8APR)
 
 ## Temas:
 
@@ -93,11 +93,29 @@ Es un lenguaje de desarrollo de propósito general y como tal es válidop para d
 
 
 ```Java
-System.out.println("Hola Mundo");
+package clase01;
+
+public class Clase01 {
+
+    public static void main(String[] args) {
+        System.out.println("Hola Mundo");
+    }  
+}
 ```
 
 ---
 
 ## :star: 1.5 Ejercicio: Saludar en Java
+
+```Java
+package clase01;
+
+public class Clase01 {
+
+    public static void main(String[] args) {
+        System.out.println("Hola Bienvenidos");
+    }  
+}
+```
 
 ---
