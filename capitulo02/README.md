@@ -332,12 +332,24 @@ public class Clase02 {
 }
 ```
 
-Dentro dle metodo **main** se puede usar VAR sin problemas, fuera de main no se puede usar.
+Dentro del metodo **main** se puede usar VAR sin problemas, fuera de main no se puede usar.
 
 ---
 ---
 
 ## :star: 2.4 Reglas para definir una variable
+
+- El primer caracter del nombre de la variable puede ser cualquier letra del alfabeto, por convension se utiliza camelCase.
+
+- No se pueden utilizar numeros como primer caracter de la varaible, si se pueden usar como segundo, tercer, cuarto etc.
+
+- Si puede tener guion bajo, inclusive puede ser el primer caracter (pero no es comun que empiece con _)
+
+- se puede utilizar el $.
+
+- se puede usar acentos, pero NO es recomendable.
+
+- No se puede utilizar caracteres especiales como : ```#```
 
 - No puede tener alguna de las palabras reservadas:
 
@@ -360,12 +372,67 @@ const      float        native        super     while
 
 ## :star: 2.5 Concatenación: Ejercicio
 
+#### Concatenar String con +
+
+```Java
+public class Clase02 {
+
+    public static void main(String[] args) {
+	var usuario = "Osvaldo";
+        var titulo = "Ingeniero";
+        var union = titulo + " " +usuario // con " " concateno un espacio, sino me quedan las palabras pegadas
+	System.out.println(union);  // Osvaldo Ingeniero
+    }
+}
+```
+
+#### El caso de int con + es la suma
+
+```Java
+public class Clase02 {
+
+    public static void main(String[] args) {
+	var numero1 = 8;
+        var numero2 = 4;
+	var suma = 8 + 4;
+	System.out.println(suma);  // 12 , no se concatena, sino que suma
+    }
+}
+```
+
+De izquierda a derecha evalua las expresiones, como primero encontro un int, entonces los toma como numeros y lo suma.
+
+Si por el contrario seria un String, me lo concatenaria, por ejemplo:
+
+```Java
+public class Clase02 {
+
+    public static void main(String[] args) {
+	var numero1 = "8";
+        var numero2 = 4;
+	var suma = numero1 + numero2;
+	System.out.println(suma);  // 84 , me lo concatena porque numero1 que esta a la izquierda es String
+    }
+}
+```
+Si tuviera 3 variables y entre parentesis pongo las variables que son int, entonces por prioridad va primero a los parentesis, entonces va a sumar en vez de concatenar (esto es por la prioridad de parentesis), si lo de afuera dle parentesis es un String a esa si la va a concatenar.
+
+-> **click derecho** -> **format** para tener el codigo ordenado
+
+
 ---
+---
+
 
 ## :star: 2.6 Caracteres especiales
 
+
 ---
+---
+
 
 ## :star: 2.7 Clase Scanner: Ejercicio
 
+
+---
 ---
