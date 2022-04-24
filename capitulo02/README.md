@@ -44,11 +44,24 @@ VARIABLES EN JAVA
 
 **variable** -> 
 
--> espacio en memoria que se define en un programa de computador para almacenar de forma temporal.
+-> espacio en memoria que se define en un programa de computador para almacenar de forma temporal un valor de tipo de dato basico, el cual puede cambiar (tomar otros valores).
 
 -> los valores pueden cambiar mientras se esta ejecutando un programa de computador
 
--> las variables en Java solo aceptan 
+-> las variables en Java solo aceptan valores de un tipo de dato.
+
+Por ejemplo tenemos:
+
+```Java
+int x = 5;
+x= -8;
+x = 2000;
+```
+
+A lo largo del programa, la varaible **x** paso de guardar **5** a guardar **-8** a guardar **2000*, todos son tipo de dato **int**, el tipo de dato NO cambia.
+
+
+
 
 En Java existen distintos datos:
 
@@ -63,11 +76,11 @@ En Java existen distintos datos:
 
 - Dentro de *Enteros*:
 
-byte - 8 bits - default: 0
+byte - 8 bits - default: 0, entre -128 a 127
 
-short - 16 bits - default: 0
+short - 16 bits - default: 0, entre -32.768 a 32.767
 
-char - 16 bits - default: 0
+char - 16 bits - default: 0, entre -2.147.483.648 a 2.147.483.647
  
 int - 32 bits - default: 0
 
@@ -76,9 +89,9 @@ long - 64 bits - default: 0
 
 - Dentro de los *Float*:
 
-float - 32 bits - default: 0
+float - 32 bits - default: 0, entre 3.4e-038 a 3.4e038
 
-double - 64 bits - default: 0
+double - 64 bits - default: 0, entre 1.7e-308 a 1.7e308
 
 
 - Otros tipos de datos son..
