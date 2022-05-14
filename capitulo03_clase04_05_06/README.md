@@ -1,4 +1,4 @@
-# :book: Capitulo 3: Tipos Primitivos en Java 
+# :book: Capitulo 3: Clases 4, 5 y 6 - Tipos Primitivos en Java (29 Abril, 6 y 13 Mayo)
 
 ## Temas:
 
@@ -23,9 +23,37 @@
 - Tarea 3: Tienda de libros = Solución
 
 ---
+---
 
+## Tip: comentarios
+
+Como todos los lenguajes Java tiene dos formas de comentar el código:
+
+- Comentario de una línea, se marca con **//**.
+
+Ejemplo:
+```Java
+// este es un comentario en linea
+```
+
+- Comentario multilínea, comienza con ```/*``` (abre) y finaliza con ```*/``` (cierra).
+
+Ejemplo:
+```Java
+/* este es un 
+comentario
+multilinea */
+```
+
+-> También tenemos *Java DOC* que es para documentar.
+
+---
+---
 
 ## :star:  3.1 Tipos Primitivos
+
+
+Comenzamos con los **tipos primitivos ENTEROS** : *byte*, *short*, *int* y *long*.
 
 ---
 
