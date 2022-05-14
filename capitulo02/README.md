@@ -42,13 +42,14 @@ VARIABLES EN JAVA
 
 - Estas variables nos permiten también hacer programas dinámicos, por lo que en la mayoría de los casos los valores cambiarán durante la interacción con el usuario y el programa. 
 
-**variable** -> 
+**variable**...
 
--> espacio en memoria que se define en un programa de computador para almacenar de forma temporal un valor de tipo de dato basico, el cual puede cambiar (tomar otros valores).
+... espacio en memoria que se define en un programa de computador para almacenar de forma temporal un valor de tipo de dato basico, el cual puede cambiar (tomar otros valores).
 
--> los valores pueden cambiar mientras se esta ejecutando un programa de computador
+... los valores pueden cambiar mientras se esta ejecutando un programa de computador
 
--> las variables en Java solo aceptan valores de un tipo de dato.
+... las variables en Java solo aceptan valores de un tipo de dato.
+
 
 Por ejemplo tenemos:
 
@@ -81,24 +82,24 @@ En Java existen distintos datos:
 
 -> Estos tipos de Java son los más básicos y son los que utilizaremos si necesitamos la mayor rapidez y ahorro en recursos, con el objetivo de que nuestros algoritmos sean lo más eficientes. Sin embargo en la práctica utilizaremos también funciones ya creadas que pueden hacer uso de manera indirecta de estos tipos primitivos, así que de cualquier manera los estaremos manejando en nuestros programas, ya sea de manera directa o indirecta. Cada uno de estos tipos primitivos, tiene un valor por default, el cual es importante conocer ya que cuando los utilicemos en conjunto con nuestras clases de Java, el compilador tomará en cuenta este valor por default según el tipo de dato que utilicemos.
 
-- Dentro de *Enteros*:
+- Dentro de **Enteros**:
 
-byte - 8 bits - default: 0, entre -128 a 127
+*byte* - 8 bits - default: 0, entre -128 a 127
 
-short - 16 bits - default: 0, entre -32.768 a 32.767
+*short* - 16 bits - default: 0, entre -32.768 a 32.767
 
-char - 16 bits - default: 0, entre -2.147.483.648 a 2.147.483.647
+*char* - 16 bits - default: 0, entre -2.147.483.648 a 2.147.483.647
  
-int - 32 bits - default: 0
+*int* - 32 bits - default: 0
 
-long - 64 bits - default: 0
+*long* - 64 bits - default: 0
 
 
-- Dentro de los *Float*:
+- Dentro de los **Float** (**Flotantes**):
 
-float - 32 bits - default: 0, entre 3.4e-038 a 3.4e038
+*float* - 32 bits - default: 0, entre 3.4e-038 a 3.4e038
 
-double - 64 bits - default: 0, entre 1.7e-308 a 1.7e308
+*double* - 64 bits - default: 0, entre 1.7e-308 a 1.7e308
 
 
 - Otros tipos de datos son..
@@ -115,8 +116,10 @@ Observar que los tipos de datos en Java comienzan en minuscula, excepto **String
 
 - Tipo que son extensiones de la clase Object (referencia a Objetos): *clases*, *Interfaces*, *Arrays*.
 
+---
 
 ## ¿ Como se declara la variable?
+
 
 En Java se pueden **declarar** (indicarle al compilador de Java que debe reservar en memoria el espacio para almacenar la variable) e **inicializar** (asignarle un valor a la variable) por separado o en una sola instrucción.
 
@@ -197,6 +200,9 @@ public class Clase02 {
         long j = 204988885695L;
     }
 }
+```
+
+---
 ---
 
 ## :star: Constantes
@@ -306,7 +312,9 @@ En Java **String** es de tipo *Object*, por lo que se debe utilizar el operador 
 | ```\"``` | inserta una comilla doble |
 | ```\\``` | inserta una barra invertida |
 
+
 En la tabla mostrada, podemos observar los caracteres de escape que son utilizados al momento de desplegar mensajes en la salida estándar. Estos caracteres los pondremos en práctica en los ejercicios que vamos a realizar a continuación.
+
 
 ---
 ---
@@ -334,8 +342,10 @@ public class Clase02 {
 
 Dentro del metodo **main** se puede usar VAR sin problemas, fuera de main no se puede usar.
 
+
 ---
 ---
+
 
 ## :star: 2.4 Reglas para definir una variable
 
@@ -353,6 +363,7 @@ Dentro del metodo **main** se puede usar VAR sin problemas, fuera de main no se 
 
 - No puede tener alguna de las palabras reservadas:
 
+
 ```
 abstract   continue     for          new        swith
 assert     dafault      goto         package    synchronized
@@ -367,10 +378,12 @@ const      float        native        super     while
 
 ```
 
+
 ---
 ---
 
 ## :star: 2.5 Concatenación: Ejercicio
+
 
 #### Concatenar String con +
 
@@ -385,6 +398,7 @@ public class Clase02 {
     }
 }
 ```
+
 
 #### El caso de int con + es la suma
 
@@ -474,6 +488,8 @@ import Scanner;
     }
 }
 ``` 
+
+[**Documentación de Oracle de la clase Scanner**](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
 
 ---
 ---
