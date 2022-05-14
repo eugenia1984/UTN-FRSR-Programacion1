@@ -55,6 +55,12 @@ multilinea */
 
 Comenzamos con los **tipos primitivos ENTEROS** : *byte*, *short*, *int* y *long*.
 
+### Byte
+
+Este es el más pequeño de los tipos primitivos enteros, el más común y más utilizado es el **int**, por el hecho que los CPU son de 32 o de 64 bits.
+
+Ahora podemos utilizar el tipo **byte**, pues al uarlo no garantiza que utilicemos solamente **8 bits**, ya que posiblemente estos 8 bits se van a almacenar en los **32 bits** que componen una palabra de una arquitectura de 32 bits. Esto es un detalle técnico, pero es importante saberlo.
+
 ---
 
 ## :star:  3.2 Tipos numéricos Enteros 
