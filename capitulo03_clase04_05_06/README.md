@@ -547,6 +547,105 @@ Eres menor de edad
 
 ## :star: 3.7 Conversión de tipos primitivos: Ejercicio Parte 1
 
+- **Integer.parseInt()** para castear a **int** teniendo un String (String -> int)
+
+```Java
+/*
+ * Clases 4, 5 y 6 - Capitulo 3 - Datos primitivos
+ */
+package capitulo3primitivos;
+
+/**
+ *
+ * @author María Eugenia Costa
+ */
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+        // Conversion de tipo primitivos
+        var edad = Integer.parseInt("20");
+	System.out.println("edad - " + edad);
+	System.out.println("edad - " + edad + 1);
+	var edad2 = "20";
+	System.out.println("edad2 - " + edad2 + 1);
+}
+```
+
+-> Con la variable **edad**, en ```edad + 1``` como edad fue casteado a **int** se suman los valores.
+
+-> Con la variable **edad2**, en ```edad2 + 1``` como edad2 NO fue casteado a **int**, sigue siendo **String** por lo que concatena y muestra **201**
+
+OUTPUT:
+```
+edad - 20
+edad - 21
+edad - 201
+```
+
+- **.parseDouble()** para castear de String a double.
+
+
+```Java
+/*
+ * Clases 4, 5 y 6 - Capitulo 3 - Datos primitivos
+ */
+package capitulo3primitivos;
+
+/**
+ *
+ * @author María Eugenia Costa
+ */
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+        // Conversion de tipo primitivos
+        var valorPi = Double.parseDouble("3.1416");
+	System.out.println("valorPi - " + valorPI);
+}
+```
+
+OUTPUT:
+```
+valorPi - 3.1416
+```
+
+- con **Scanner** el INOUT es de tipo **String**, si utilizamos **.nextLine()** espera un String, si quiero manejar otro valor, entonces debería castearlo.
+
+
+```Java
+/*
+ * Clases 4, 5 y 6 - Capitulo 3 - Datos primitivos
+ */
+package capitulo3primitivos;
+import java.util.Scanner;
+
+/**
+ *
+ * @author María Eugenia Costa
+ */
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+        // Conversion de tipo primitivos
+        var entrada = new Scanner(System.in);
+	System.out.println("Digite su edad: ");
+	// conversion de tipo de la clase Scanner
+	edad = Integer.parseInt(entrada.nextLine());
+	var edadTexto = String.valueOf(10);
+	System.out.println("edadTexto: " + edadTexto);
+	var fraseChar = "programadores"; // es de tipo STRING
+	fraseChar1 = fraseChar.charAt(0); // 'p'
+	fraseChar2 = fraseChar.charAt(1); // 'r'
+	System.out.println("programadores, tiene como primer caracter: " + frase1);
+	System.out.println("programadores, tiene como segundo caracter: " + frase2);
+    }
+}
+```
+
+-> Para utilizar **Scanner** debo tenerlo importado: ```import java.util.Scanner;```
+
+-> con **.charAt()** tomo un solo caracter de una String.
+
 ---
 
 ## :star: 3.8 Conversión de tipos primitivos: Ejercicio Parte 2
