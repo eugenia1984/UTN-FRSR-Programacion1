@@ -314,9 +314,18 @@ Con **F8** tenemos el shortcut del **step over** (próximo paso).
 
 - Puede alamcenar un solo caracter.
 
+- de **16 bits**
+
 - El caracter va entre comillas simples ''.
 
 - caracteres UNICODE, la primer versión fue en 1991, version 1.0.0 y comenzo con 7.129 caracteres, a traves de las nuevas versiones se fueron modificando, hasta llegar a los **144.697 caracteres**, que son los que tienen actualmente.
+
+- Se puede nombrar de distintas formas, por ejemplo...
+
+... con **#** tenemos: **code** (U+0023), **decimal** (35), **octal** (043)
+
+... con **null** tenemos: **code** (U+0000), **decimal** (0), **octal** (000)
+
 
 
 ```Java
@@ -327,6 +336,41 @@ public class Capitulo3Primitivos {
     public static void main(String[] args) {
 	char miVariableChar = 'a';
         System.out.println("miVariableChar: " + miVariableChar);
+	char caracterUnicode = '\u0024'; // indicamos a Java la asignacion en valor UNICODE
+        System.out.println("caracterUnicode: " + caracterUnicode);
+	char caracterDecimal = 36;
+        System.out.println("caracterDecimal: " + caracterDecimal);
+ 	char caracterSimbolo = '$';
+        System.out.println("caracterSimbolo: " + caracterSimbolo);
+    }  
+}
+```
+
+
+
+OUTPUT:
+
+```
+miVariableChar: a
+caracterUnicode: $
+caracterDecimal: $
+caracterSimbolo: $
+```
+
+Con **var**:
+
+```Java
+package capitulo3primitivos;
+
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+	var caracterUnicode1 = '\u0024'; // indicamos a Java la asignacion en valor UNICODE
+        System.out.println("caracterUnicode1: " + caracterUnicode);
+	var caracterDecimal1 = 36;
+        System.out.println("caracterDecimal1: " + caracterDecimal);
+ 	var caracterSimbolo1 = '$';
+        System.out.println("caracterSimbolo1: " + caracterSimbolo);
     }  
 }
 ```
@@ -334,8 +378,38 @@ public class Capitulo3Primitivos {
 OUTPUT:
 
 ```
-miVariableChar: a
+caracterUnicode1: $
+caracterDecimal1: 36
+caracterSimbolo1: $
 ```
+
+Para que con **var** nos lo tome como **char** debo realizar el **casteo**:
+
+```var caracterDecimal1 = (char)36;```
+
+-> Un char se puede asignar a un tipo entero, porque el int es de 32 bits y el char es de 16 bits.
+
+
+```Java
+package capitulo3primitivos;
+
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+	var varEnteroChar = '$'; 
+        System.out.println("varEnteroChar: " + varEnteroChar);
+    }  
+}
+```
+
+OUTPUT:
+
+```
+varEnteroChar: 36
+```
+
+-> muestra el valor decimal asociado al simbolo.
+
 
 ---
 
@@ -351,7 +425,13 @@ miVariableChar: a
 
 ---
 
-## :star: 3.9 Cuestionario 1: Preguntas de variables |       Cuestionario 2: Preguntas de números
+## :star: 3.9 
+
+Realizar en el campus:
+
+- Cuestionario 1: Preguntas de variables 
+
+- Cuestionario 2: Preguntas de números
 
 ---
 

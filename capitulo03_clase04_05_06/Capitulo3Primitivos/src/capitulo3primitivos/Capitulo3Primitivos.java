@@ -44,5 +44,11 @@ public class Capitulo3Primitivos {
         // tipo primitivo: char
         char miVariableChar = 'a';
         System.out.println("miVariableChar: " + miVariableChar);
+        char caracterUnicode = '\u0024'; // inidicamos a Java la asignacion en valor UNICODE
+        System.out.println("caracterUnicode: " + caracterUnicode);
+        char caracterDecimal = 36;
+        System.out.println("caracterDecimal: " + caracterDecimal);
+        char caracterSimbolo = '$';
+        System.out.println("caracterSimbolo: " + caracterSimbolo);
     } 
 }
