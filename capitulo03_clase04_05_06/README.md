@@ -291,12 +291,20 @@ public class Capitulo3Primitivos {
 
     public static void main(String[] args) {
 	var numEntero = 20; // las literales sin punto automaticamente son de tipo iNT
+	var numDouble = 10.0;  // al tener el . es de tipo DOUBLE
+	var numFloat = 10.0F; // al tener la F es de tippo FLOAT
 	System.out.println("numEntero: " + numEntero); // numEntero: 20
+	System.out.println("numDouble: " + numDouble); // numDouble: 10.0
+	System.out.println("numFloat: " + numFloat); // numFloat: 10.0
     }  
 }
 ```
 
-Si agrego un **break point** en ```var numEntero = 20;``` y en modo debug voy en paso a paso voy a ver en ese momento que mi variable *numEntero* es de tipo **int**.
+Si agrego un **breakpoint** en ```var numEntero = 20;``` y en modo debug voy en paso a paso voy a ver en ese momento que mi variable *numEntero* es de tipo **int**.
+
+Y si agrego otro **breakpoint** en ```var numDouble = 10.0;``` y en modo debug voy en paso a paso voy a ver en ese momento que mi variable *numDouble* es de tipo **double**.
+
+Y si agrego otro **breakpoint** en ```var numFloat = 10.0F;``` y en modo debug voy en paso a paso voy a ver en ese momento que mi variable *numFloat* es de tipo **float**.
 
 Con **F8** tenemos el shortcut del **step over** (próximo paso).
 
