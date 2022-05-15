@@ -545,7 +545,7 @@ Eres menor de edad
 
 ---
 
-## :star: 3.7 Conversión de tipos primitivos: Ejercicio Parte 1
+## :star: 3.7 y 3.8 Conversión de tipos primitivos: Ejercicio Parte 1 y 2
 
 - **Integer.parseInt()** para castear a **int** teniendo un String (String -> int)
 
@@ -638,19 +638,25 @@ public class Capitulo3Primitivos {
 	fraseChar2 = fraseChar.charAt(1); // 'r'
 	System.out.println("programadores, tiene como primer caracter: " + frase1);
 	System.out.println("programadores, tiene como segundo caracter: " + frase2);
+	System.out.println("Digite un caracter: ");
+	fraseChar2 = entrada.nextLine().charAt(0);
+	System.out.println("fraseChar2: " + fraseChar2);
     }
 }
 ```
 
 -> Para utilizar **Scanner** debo tenerlo importado: ```import java.util.Scanner;```
 
--> con **.charAt()** tomo un solo caracter de una String.
+-> con **.charAt()** tomo un solo caracter de una String. Un ejemplo con datos ingresados por teclado:
+
+```
+System.out.println("Digite un caracter: ");
+fraseChar2 = entrada.nextLine().charAt(0);
+```
+
 
 ---
 
-## :star: 3.8 Conversión de tipos primitivos: Ejercicio Parte 2
-
----
 
 ## :star: 3.9 
 
@@ -659,6 +665,8 @@ Realizar en el campus:
 - Cuestionario 1: Preguntas de variables 
 
 - Cuestionario 2: Preguntas de números
+
+-> realizado en el campus
 
 ---
 
