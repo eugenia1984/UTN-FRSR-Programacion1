@@ -283,6 +283,23 @@ Es todo el codigo que ya fui mostrando en cada tipo, tamibén está en la carpet
 
 ## :star: 3.4 Inferencia de tipos con var y tipos primitivos
 
+
+```Java
+package capitulo3primitivos;
+
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+	var numEntero = 20; // las literales sin punto automaticamente son de tipo iNT
+	System.out.println("numEntero: " + numEntero); // numEntero: 20
+    }  
+}
+```
+
+Si agrego un **break point** en ```var numEntero = 20;``` y en modo debug voy en paso a paso voy a ver en ese momento que mi variable *numEntero* es de tipo **int**.
+
+Con **F8** tenemos el shortcut del **step over** (próximo paso).
+
 ---
 
 ## :star: 3.5 Tipo char: Ejercicio
