@@ -10,6 +10,7 @@ package capitulo3primitivos;
 public class Capitulo3Primitivos {
 
     public static void main(String[] args) {
+        // tipos primitivos numericos: byte, short, int, long, float, double
         // byte de -128 a 127
         byte numEnteroByte = 10;
         System.out.println("numEnteroByte: " + numEnteroByte);
@@ -39,6 +40,9 @@ public class Capitulo3Primitivos {
         double numDouble = 1.7976931348623157E308;
         System.out.println("numFloat: " + numDouble);
         System.out.println("Valor mínimo de double: " + Double.MIN_VALUE);
-        System.out.println("Valor máximo de double: " + Double.MAX_VALUE);       
+        System.out.println("Valor máximo de double: " + Double.MAX_VALUE); 
+        // tipo primitivo: char
+        char miVariableChar = 'a';
+        System.out.println("miVariableChar: " + miVariableChar);
     } 
 }

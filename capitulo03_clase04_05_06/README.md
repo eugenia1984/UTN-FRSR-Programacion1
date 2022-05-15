@@ -310,11 +310,36 @@ Con **F8** tenemos el shortcut del **step over** (próximo paso).
 
 ---
 
-## :star: 3.5 Tipo char: Ejercicio
+## :star: 3.5 Tipo char: 
+
+- Puede alamcenar un solo caracter.
+
+- El caracter va entre comillas simples ''.
+
+- caracteres UNICODE, la primer versión fue en 1991, version 1.0.0 y comenzo con 7.129 caracteres, a traves de las nuevas versiones se fueron modificando, hasta llegar a los **144.697 caracteres**, que son los que tienen actualmente.
+
+
+```Java
+package capitulo3primitivos;
+
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+	char miVariableChar = 'a';
+        System.out.println("miVariableChar: " + miVariableChar);
+    }  
+}
+```
+
+OUTPUT:
+
+```
+miVariableChar: a
+```
 
 ---
 
-## :star: 3.6 Tipo boolean: Ejercicio
+## :star: 3.6 Tipo boolean:
 
 ---
 
