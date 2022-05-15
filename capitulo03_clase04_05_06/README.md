@@ -411,9 +411,137 @@ varEnteroChar: 36
 -> muestra el valor decimal asociado al simbolo.
 
 
+```Java
+package capitulo3primitivos;
+
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+	int caracterChar = 'b'; 
+        System.out.println("caracterChar: " + caracterChar);
+    }  
+}
+```
+
+OUTPUT:
+
+```
+caracterChar: 98
+```
+
+
 ---
 
 ## :star: 3.6 Tipo boolean:
+
+
+- Dos valores: **true** o **false**.
+
+- son **flag** (bandera): true/verde , false/rojo, si lo pensamos como un semaforo.
+
+- las podemos usar en los condicionales
+
+```Java
+/*
+ * Clases 4, 5 y 6 - Capitulo 3 - Datos primitivos
+ */
+package capitulo3primitivos;
+
+/**
+ *
+ * @author María Eugenia Costa
+ */
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+        // tipo primitivo : booleanos
+        boolean variableBooleana = true;
+        System.out.println("variableBooleana: " + variableBooleana);
+ 	// condicional IF
+        if (variableBooleana) {
+            System.out.println("Es verdadera. La bandera es verde");
+        }
+	// condicional: IF ELSE
+        boolean variableBooleana2 = false;
+        if (variableBooleana2) {
+            System.out.println("Es verdadera. La bandera es verde");
+        } else {
+            System.out.println("Es falsa. La bandera es roja");
+        }
+    } 
+}
+```
+
+OUTPUT:
+```
+variableBooleana: true
+Es verdadera. La bandera es verde
+Es falsa. La bandera es roja
+```
+
+Rehacemos el ejercicio de ser menor de edad practicado con PseInt, pero con Java:
+
+```Java
+/*
+ * Clases 4, 5 y 6 - Capitulo 3 - Datos primitivos
+ */
+package capitulo3primitivos;
+
+/**
+ *
+ * @author María Eugenia Costa
+ */
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+        // Algoritmo : ¿es mayor de edad ?
+        int edad = 30;
+        boolean adulto = edad >=18;
+        if (adulto) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
+    } 
+}
+```
+
+OUTPUT:
+```
+Eres mayor de edad
+```
+
+Otro modo es en la parte del **if** dejar ya la **condicion**:
+
+
+```Java
+/*
+ * Clases 4, 5 y 6 - Capitulo 3 - Datos primitivos
+ */
+package capitulo3primitivos;
+
+/**
+ *
+ * @author María Eugenia Costa
+ */
+public class Capitulo3Primitivos {
+
+    public static void main(String[] args) {
+        // Algoritmo : ¿es mayor de edad ?
+        int edad2 = 15;
+        if (edad2 >=18) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
+    } 
+}
+```
+
+OUTPUT:
+```
+Eres menor de edad
+```
 
 ---
 

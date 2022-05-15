@@ -44,11 +44,41 @@ public class Capitulo3Primitivos {
         // tipo primitivo: char
         char miVariableChar = 'a';
         System.out.println("miVariableChar: " + miVariableChar);
-        char caracterUnicode = '\u0024'; // inidicamos a Java la asignacion en valor UNICODE
+        char caracterUnicode = '\u0024'; // indicamos a Java la asignacion en valor UNICODE
         System.out.println("caracterUnicode: " + caracterUnicode);
         char caracterDecimal = 36;
         System.out.println("caracterDecimal: " + caracterDecimal);
         char caracterSimbolo = '$';
         System.out.println("caracterSimbolo: " + caracterSimbolo);
+        // tipo primitivo : booleanos
+        boolean variableBooleana = true;
+        System.out.println("variableBooleana: " + variableBooleana);
+        // condicional IF
+        if (variableBooleana) {
+            System.out.println("Es verdadera. La bandera es verde");
+        }
+        // condicional: IF ELSE
+        boolean variableBooleana2 = false;
+        if (variableBooleana2) {
+            System.out.println("Es verdadera. La bandera es verde");
+        } else {
+            System.out.println("Es falsa. La bandera es roja");
+        }
+        // Algoritmo : ¿es mayor de edad ?
+        int edad = 30;
+        boolean adulto = edad >=18;
+        if (adulto) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
+        // Algoritmo con la condicion dentro del if
+        int edad2 = 15;
+        if (edad2 >=18) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
+
     } 
 }
