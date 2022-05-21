@@ -715,6 +715,6 @@ public class Clase6TrabajoPractico {
 
 ---
 
-## Precedencia de operaodores
+## Precedencia de operadores
 
 ---
