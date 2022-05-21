@@ -1,4 +1,4 @@
-# :book: Capitulo 3: Clases 4, 5 y 6 - Tipos Primitivos en Java (29 Abril, 6 y 13 Mayo)
+# :book: Capitulo 3: Clases 4, 5 , 6 y 7 - Tipos Primitivos y Operadores en Java (29 Abril, 6 , 13 Mayo y 20 de Mayo)
 
 ## Temas:
 
@@ -670,6 +670,51 @@ Realizar en el campus:
 
 ---
 
-## :star: Tarea 3: Tienda de libros = Solución
+## :star: Tarea 3: Tienda de libros = Solución del equipo:
+
+```Java
+package clase6trabajopractico;
+
+import java.util.Scanner;
+
+
+public class Clase6TrabajoPractico {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        String nombreLibro;
+        int idLibro;
+        double precioLibro;
+        boolean envioGratuito;
+        
+        System.out.println("Ingrese un nombre: ");
+        nombreLibro = entrada.nextLine();
+        System.out.println("Ingrese el id del libro: ");
+        idLibro = entrada.nextInt();
+        System.out.println("Ingrese el precio del libro: ");
+        precioLibro = entrada.nextDouble();
+        System.out.println("Indicar si el envío es gratuito (True/False)");
+        envioGratuito = entrada.nextBoolean();
+        System.out.println("Nombre: " + nombreLibro);
+        System.out.println("ID: " + idLibro);
+        System.out.println("Precio: " + precioLibro);
+        System.out.println("Envío Gratuito? " + envioGratuito);   
+    }  
+}
+```
+
+---
+---
+
+
+## :star: Clase 7 - Operadores
+
+---
+
+## Precedencia de operaodores
 
 ---
