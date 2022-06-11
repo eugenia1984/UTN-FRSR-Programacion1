@@ -832,3 +832,84 @@ public class Clase06 {
 ```
 
 ---
+---
+
+## :book: Clase 8
+
+---
+
+## Ejercicio : Rectángulo
+
+Se solicita calcular el área y el perímetro de un rectángulo, para esto deberemos crear las variables:
+
+- Alto (int)
+
+- Ancho(int)
+
+El usuario debe proporcionar los valores de alto, ancho y después se debe imprimir el resultado en el siguiente formato: (recuerden no usar acentos, respetar los espacios, mayúsculas, minúsculas y saltos de líneas.
+
+Le decimos al usuario:
+Digite el alto del rectángulo:
+Digite el ancho del rectángulo:
+
+Fórmula: 
+
+**Área = alto * ancho;**
+
+**Perímetro = (alto + ancho) * 2;**
+
+¿Cuál es el código del ejercicio planteado?
+
+
+## Ejercicio: El mayor de 2 números
+
+Usaremos el Operador Ternario
+
+Le vamos a pedir los números al usuario
+
+
+---
+
+| Prior. | Operador | Tipo deOperador | Operacion |
+| ------ | -------- | --------------- | --------- |
+| 1 | ++ | aritmetico | incremento previo o posterior |
+| 1 | -- | aritmetico | decremento previo o posterior |
+| 1 | +, - | aritmetico | suma o resta unaria |
+| 2 | (tipo) | cualquiera | | 
+| 3 | * / & | aritmetico | multiplicaicon division resto |
+| 4 | + - |aritmetico | suma resta |
+| 4 | + | cadena | concatenacion |
+| 5 | << | integral | desplazamiento de bits a la izq |
+| 5 | >> | integral | desplazamiento de bits a la der con inclusion de signo |
+| 5 | >>> | integral | desplazamiento de bits a la der con inclusion de vero |
+| 6 | < , <= | aritmetico | menor que, menor o igual que |
+| 6 | > , >= | aritmetico | mayor que, mayor o igual que |
+| 6 | instance of | objeto, tipo | comparacion de tipos |
+| 7 | == | primitivo | igual (valores identicos) |
+| 7 | ¡= | primitivo | desigual (valores difernetes) |
+| 7 | == | objeto | igual (referencia la mismo objeto) |
+| 7 | ¡= | objeto | desigual (referencia a distintos objetos) |
+| 8 | & | integral | cambio a bits AND |
+| 8 | & | booleano | producto booleano |
+| 9 | ^ | integral | cambio de bits XOR |
+| 9 | ^ | booleano | suma exclusiva booleana |
+| 10 | ```|``` | integral | cambio de bits OR |
+| 10 | ```|``` | booleano | suma booleana |
+| 11 | && | booleano | AND condicional |
+| 12 | ```||``` | booleano | OR condicional |
+| 13 | ```? :``` | booleano, cualquiera, cualquiera | operador condicional ternario |
+| 14 | ```=``` | variable cualquiera | asignacion | 
+| 14 | ```*=``` | variable cualquiera | asignacion | 
+| 14 | ```/=``` | variable cualquiera | asignacion | 
+| 14 | ```%=``` | variable cualquiera | asignacion | 
+| 14 | ```+=``` | variable cualquiera | asignacion | 
+| 14 | ```-=``` | variable cualquiera | asignacion | 
+| 14 | ```<<=``` | variable cualquiera | asignacion | 
+| 14 | ```>>=``` | variable cualquiera | asignacion | 
+| 14 | ```&=``` | variable cualquiera | asignacion | 
+| 14 | ```^=``` | variable cualquiera | asignacion | 
+| 14 | ```!=``` | variable cualquiera | asignacion | 
+
+
+---
+---
