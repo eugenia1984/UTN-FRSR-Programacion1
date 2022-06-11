@@ -1,4 +1,4 @@
-# :book: Clase 8 y 9
+# :book: Clase 8 , 9 y 10
 
 ---
 
@@ -424,3 +424,201 @@ public class Ejercicio7 {
 ---
 
 
+## :book: Clase 10
+
+### :star: Sentencia de Control if else
+
+
+Diagrama de flujo:
+
+```
+          INICIO
+            |
+            V
+    ---- CONDICION ---
+    |                 |
+  false             true
+    |                 |
+    V                 V
+ bloque            bloque
+    2                 1
+    |                 |
+    -------------------
+             |
+             V
+            FIN
+```
+
+### :star: Nuevo proyecto: Leccion2
+
+#### IF - ELSe -> condicional doble
+
+```Java
+package leccion2;
+
+/**
+ * @author Maria Eugenia Costa
+ */
+public class Leccion2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // IF ELSE  
+        boolean condicion = true;
+        if (condicion) {
+            System.out.println("Condicion Verdadera");
+        } else {
+            System.out.println("Condicion Falsa");
+        }
+    }
+}
+```
+
+---
+
+##  :star: Ejercicio con la estructura if else
+
+
+```Java
+package leccion2;
+
+/**
+ * @author Maria Eugenia Costa
+ */
+public class Leccion2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // IF ELSE : PRIMER EJERCICIO 
+        boolean condicion = true;
+        if (condicion) {
+            System.out.println("Condicion Verdadera");
+        } else {
+            System.out.println("Condicion Falsa");
+        }
+        // IF ELSE: SEGUNDO EJERCICIO
+        int numero = 2;
+        String numeroTexto = "Numero desconocido";
+        
+        if (numero == 1) {
+            numeroTexto = "Numero uno";
+        } else if (numero == 2)  {
+            numeroTexto = "Numero dos";
+        } else if (numero == 3) {
+            numeroTexto = "Numero tres";
+        } else if(numero  == 4) {
+            numeroTexto = "Numero cuatro";
+        } else {
+            numeroTexto = "Numero no encontrado";
+        }
+        
+    }
+}
+```
+
+---
+
+## :star: Cálculo de las estaciones del año con if else
+
+Crear un nuevo proyecto con el nombre **CondicionalEjercicio1**
+
+```Java
+package consicionalejercicio1;
+
+import java.util.Scanner;
+
+/**
+ * @author jMaria Eugenia Costa
+ */
+public class ConsicionalEjercicio1 {
+
+    public static void main(String[] args) {
+        // TIF ELSE ESTACIONES DEL AÑO
+        Scanner read = new Scanner(System.in);
+        int mes;
+        String estacion = "Estacion desconocida";
+        System.out.println("Ingrese un mes del año (en numero): ");
+        mes = read.nextInt();
+        if (mes == 1 ||mes == 2 ||mes == 3) {
+            estacion = "Verano";
+        } else if (mes == 4 || mes == 5 ||mes == 6) {
+            estacion = "Otoño";
+        } else if (mes == 7 || mes == 8 || mes == 9) {
+            estacion ="Invierno";
+        } else if (mes == 10 || mes == 11 || mes ==12) {
+            estacion ="Primavera";
+        } else {
+            estacion = "Mes invalido";
+        }
+	System.out.println("Es: " + estacion);
+    }
+    
+}
+```
+
+
+---
+
+## :star:  Sentencia de Control Switch
+
+```
+EXPRESION
+  |
+  |---caso1---> INSTRUCCIONES1 ---  --> |
+  |                                     |
+  |---caso2---> INSTRUCCIONES2 -------> |
+  |                                     |
+  |---caso3---> INSTRUCCIONES3 -------> |
+  |                                     |
+  |-->default-->instrucciones---------->|
+```
+
+->> LUEGO DE CADA CASE VA EL **BREAK**
+
+```Java
+package consicionalejercicio1;
+
+import java.util.Scanner;
+
+/**
+ * @author jMaria Eugenia Costa
+ */
+public class ConsicionalEjercicio1 {
+
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        // SWITCH
+        int numero;
+        String numeroATexto = "Valor desconocido";
+        System.out.println("Ingrese un numero entre 1 al 4 : ");
+        numero = read.nextInt();
+        switch (numero) {
+            case 1:
+                numeroATexto = "Numero uno";
+                break;
+            case 2:
+                numeroATexto = "Numero dos";
+                break;
+            case 3:
+                numeroATexto = "Numero tres";
+                break;
+            case 4:
+                numeroATexto = "Numero cuatro";
+                break;
+            default:
+                numeroATexto ="No cumplio la consigna";
+        }
+        System.out.println("numeroATexto: " + numeroATexto);
+    }
+    
+}
+
+```
+
+
+---
+---
