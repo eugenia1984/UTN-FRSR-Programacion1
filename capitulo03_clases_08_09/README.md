@@ -29,6 +29,28 @@ Fórmula:
 ¿Cuál es el código del ejercicio planteado?
 
 
+```Java
+package clase8;
+/**
+ * @author Maria Eugenia Costa
+ */
+public class Clase8 {
+
+    public static void main(String[] args) {
+        int alto;
+        int ancho;
+        System.out.println("Ingrese el alto del rectangulo: ");
+        alto = leer.nextInt();
+        System.out.println("Ingrese el ancho del rectangulo: ");
+        ancho = leer.nextInt();
+        int area = alto * ancho;
+        int perimetro = (alto + ancho) * 2;
+        System.out.println("El area es: " + area);
+        System.out.println("El perimetro es : " + perimetro);
+    }
+    
+}
+```
 ---
 
 ##  :star: Ejercicio: El mayor de 2 números
@@ -258,5 +280,139 @@ var numeroTernario = 7;
 resultadoTernario = ( numeroTernario % 2 == 0 ) ? "Es par" ? "Es impar";
 ```
 
+
 ---
+---
+
+## :book: Clase 9
+
+## primer ejercicio
+
+Hacer un programa que calcule e imprima la suma de tres calificaciones.
+
+Pedir las calificaciones al usuario
+
+Crear un nuevo proyecto llamado **ejercicio5**
+
+
+```Java
+package ejercicio5;
+
+import java.util.Scanner; 
+/**
+ 
+ * @author Maria Eugenia Costa
+ */
+public class Ejercicio5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        // Hacer un programa que calcule e imprima la suma de tres calificaciones.
+        // Pedir las calificaciones al usuario
+        float calificacion1, calificacion2, calificacion3, suma;
+        System.out.println("Ingrese la primer calificacion: ");
+        calificacion1 = read.nextInt();
+        System.out.println("Ingrese la segunda calificacion: ");
+        calificacion2 = read.nextInt();
+        System.out.println("Ingrese la tercer calificacion: ");
+        calificacion3 = read.nextInt();
+        suma = calificacion1 + calificacion2 + calificacion3;
+        System.out.println("La suma de las 3 calificaciones ingresadas es: " + suma);
+    }
+    
+}
+```
+
+
+## Segundo ejercicio:
+
+Guillermo tiene N dolares.
+
+Luis tiene la mitad de lo que posee Guillermo.
+
+Juan tiene la mitad de lo que posee Luis y Guillermo juntos.
+
+Hacer un programa que calcule e imprima la cantidad de dinero que tienen entre los tres.
+
+Crear un nuevo proyecto llamado ejercicio 6.
+
+
+```Java
+package ejercicio6;
+
+import java.util.Scanner;
+/**
+ * @author Maria Eugenia costa
+ */
+public class Ejercicio6 {
+
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        float guillermo, luis, juan, total;
+        System.out.println("Ingrese la cantidad de dinero de Guillermo: ");
+        guillermo = read.nextFloat();
+        luis = guillermo / 2;
+        juan = (luis + guillermo ) / 2;
+        total = luis + guillermo + juan;
+        System.out.println("El dinero de Luis es: USD " + luis);
+        System.out.println("El dinero de Juan es: USD " + juan);
+        System.out.println("El total del dinero es: USD " + total);
+    }
+    
+}
+```
+
+## Tercer ejercicio
+
+Una compañia de venta de carros usados, paga a su personal de ventas un salario de $ 1000 mensuales mas una comision de $ 150 por cada carro vendido, mas el 5% del valor de la venta por carro. Cada mes el capturista de la empresa ingresa en la computadora los datos pertinentes.
+
+Hacer un programa que calcule e imprima el salario mensual de un vendedor dado.
+
+El salario de 1000 lo vamos a manejar como un dato constante, para asignarlo debemos usar la palabra reservada final.
+
+
+Crear un nuevo proyecto llamado ejercicio 7.
+
+
+```Java
+package ejercicio7;
+
+import java.util.Scanner;
+/**
+ * @author Maria Eugenia Costa
+ */
+public class Ejercicio7 {
+
+
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        final int SALARIO = 1000; // final porque es constante
+        int comision = 150;
+        int venta;
+        float salarioMensual, ventaCarro, porcentajeVenta, totalPrecio;
+        
+        System.out.println("Ingrese la cantidad de carros vendidos: ");
+        venta = read.nextInt();
+        System.out.println("Ingrese el precio del carro: ");
+        ventaCarro = read.nextFloat();
+        
+        comision *= venta;
+        totalPrecio = ventaCarro * venta;
+        porcentajeVenta = totalPrecio * 0.05f;
+        salarioMensual = SALARIO + comision + porcentajeVenta;
+        System.out.println("El salario mensual es: " + salarioMensual);
+        
+    }
+    
+}
+```
+
+
+---
+---
+
+
 ---

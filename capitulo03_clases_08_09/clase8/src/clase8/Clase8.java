@@ -1,10 +1,14 @@
 package clase8;
+
+import java.util.Scanner;
+
 /**
  * @author Maria Eugenia Costa
  */
 public class Clase8 {
 
     public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
         // Operadores Unarios
         int num1 = 7;
         int num2 = -num1; // cambio de signo: -7
@@ -77,6 +81,33 @@ public class Clase8 {
         } else {
             System.out.println("Papa no puede asistir al juego de su hijo");
         }
+        /*
+        Se solicita calcular el área y el perímetro de un rectángulo, para 
+        esto deberemos crear las variables:
+        - Alto (int)
+        - Ancho(int)
+        El usuario debe proporcionar los valores de alto, ancho y después se 
+        debe imprimir el resultado en el siguiente formato: (recuerden no usar 
+        acentos, respetar los espacios, mayúsculas, minúsculas y saltos de líneas.
+
+        Le decimos al usuario:
+        Digite el alto del rectángulo:
+        Digite el ancho del rectángulo:
+
+        Fórmula: 
+        Área = alto * ancho;
+        Perímetro = (alto + ancho) * 2;
+        */
+        int alto;
+        int ancho;
+        System.out.println("Ingrese el alto del rectangulo: ");
+        alto = leer.nextInt();
+        System.out.println("Ingrese el ancho del rectangulo: ");
+        ancho = leer.nextInt();
+        int area = alto * ancho;
+        int perimetro = (alto + ancho) * 2;
+        System.out.println("El area es: " + area);
+        System.out.println("El perimetro es : " + perimetro);
                 
           
     } 
