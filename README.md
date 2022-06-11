@@ -8,4 +8,6 @@ Temas:
 
 - [Capitulo 3 - Clases: 04, 05, 06 y 7: Java, tipo de primitivos y operadores](https://github.com/eugenia1984/UTN-FRSR-Programacion1/tree/main/capitulo03_clase04_05_06_07)
 
+- [Capitulo 3 - Clases: 8 y 9: Java, tipo de primitivos y operadores](https://github.com/eugenia1984/UTN-FRSR-Programacion1/tree/main/capitulo03_clases_08_09)
+
 ---
