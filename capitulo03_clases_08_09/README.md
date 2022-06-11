@@ -286,7 +286,7 @@ resultadoTernario = ( numeroTernario % 2 == 0 ) ? "Es par" ? "Es impar";
 
 ## :book: Clase 9
 
-## primer ejercicio
+## Primer ejercicio
 
 Hacer un programa que calcule e imprima la suma de tres calificaciones.
 
@@ -326,6 +326,7 @@ public class Ejercicio5 {
 }
 ```
 
+->> [lo podes ver en ejercicio5](https://github.com/eugenia1984/UTN-FRSR-Programacion1/tree/main/capitulo03_clases_08_09/ejercicio5)
 
 ## Segundo ejercicio:
 
@@ -364,6 +365,12 @@ public class Ejercicio6 {
     
 }
 ```
+
+
+->> [lo podes ver en ejercicio 6](https://github.com/eugenia1984/UTN-FRSR-Programacion1/tree/main/capitulo03_clases_08_09/ejercicio6)
+
+---
+
 
 ## Tercer ejercicio
 
@@ -411,8 +418,9 @@ public class Ejercicio7 {
 ```
 
 
+->> [lo podes ver en ejercicio 7](https://github.com/eugenia1984/UTN-FRSR-Programacion1/tree/main/capitulo03_clases_08_09/ejercicio7)
+
 ---
 ---
 
 
----
